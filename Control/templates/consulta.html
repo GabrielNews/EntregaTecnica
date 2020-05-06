@@ -1,0 +1,47 @@
+﻿{% load staticfiles %}
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <link rel="stylesheet" type="text/css" href="{% static "css/consulta.css" %}">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="{% static "DataTable/datatables.min.css" %}">
+    <link rel="stylesheet" type="text/css" href="{% static "daterangepicker\daterangepicker.css" %}" />
+    <title>Entrega · Consultas</title> 
+</head>
+<body class="body">
+<div class="container" id="container">
+    <div class="panel">
+        <input type="text" id="selector" class="periodo" name="daterange"/>
+        <button type="button" id="btnSair" class="btn btn-dark" onclick="window.location.href = '{% url 'deslogar' %}'"> SAIR </button>
+    </div>
+    <table class="display table" id="tabela">
+        <thead class="thead-dark">
+            <tr>
+                <th scope="col">ADM</th>
+                <th scope="col">Nome</th>
+                <th scope="col">Data de Compra</th>
+                <th scope="col">Status</th>
+                <th scope="col">Dias no Status</th>
+            </tr>
+        </thead>
+    <tbody id="tbody">
+         {% for dados in consulta %}
+            <tr>
+                {% for linha in dados %}
+                    <td> {{ linha }} </td>
+                {% endfor %}
+            </tr>
+        {% endfor %}
+    </tbody>
+    </table>
+</div>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script type="text/javascript" charset="utf8" src="{% static "DataTable/datatables.min.js" %}"></script>
+<script type="text/javascript" src="{% static "daterangepicker\moment.min.js" %}"></script>
+<script type="text/javascript" src="{% static "daterangepicker\daterangepicker.js" %}"></script>
+<script type="text/javascript" src="{% static "js/script.js" %}"></script>
+</body>
+</html>

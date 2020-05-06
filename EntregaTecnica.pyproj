@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <Name>EntregaTecnica</Name>
+    <RootNamespace>EntregaTecnica</RootNamespace>
+    <TestFramework>Pytest</TestFramework>
+    <InterpreterId>MSBuild|env|$(MSBuildProjectFullPath)</InterpreterId>
+  </PropertyGroup>
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>432b986a-bcad-4a18-a7c2-7467f43e0224</ProjectGuid>
+    <ProjectHome>.</ProjectHome>
+    <ProjectTypeGuids>{5F0BE9CA-D677-4A4D-8806-6076C0FAAD37};{349c5851-65df-11da-9384-00065b846f21};{888888a0-9f3d-457c-b088-3a5042f75d52}</ProjectTypeGuids>
+    <StartupFile>manage.py</StartupFile>
+    <SearchPath>
+    </SearchPath>
+    <WorkingDirectory>.</WorkingDirectory>
+    <WebBrowserUrl>http://localhost</WebBrowserUrl>
+    <LaunchProvider>Django launcher</LaunchProvider>
+    <DjangoSettingsModule>EntregaTecnica.settings</DjangoSettingsModule>
+    <OutputPath>.</OutputPath>
+    <SuppressCollectPythonCloudServiceFiles>true</SuppressCollectPythonCloudServiceFiles>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="Control\forms.py" />
+    <Compile Include="Control\models.py" />
+    <Compile Include="Control\static\credential\spreads.py" />
+    <Compile Include="Control\tests.py" />
+    <Compile Include="Control\views.py" />
+    <Compile Include="Control\__init__.py" />
+    <Compile Include="Control\migrations\__init__.py" />
+    <Compile Include="manage.py" />
+    <Compile Include="EntregaTecnica\__init__.py" />
+    <Compile Include="EntregaTecnica\settings.py" />
+    <Compile Include="EntregaTecnica\urls.py" />
+    <Compile Include="EntregaTecnica\wsgi.py" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Control\" />
+    <Folder Include="Control\migrations\" />
+    <Folder Include="Control\static\" />
+    <Folder Include="Control\static\credential\" />
+    <Folder Include="Control\static\credential\__pycache__\" />
+    <Folder Include="Control\static\css\" />
+    <Folder Include="Control\static\DataTable\" />
+    <Folder Include="Control\static\DataTable\DataTables-1.10.20\" />
+    <Folder Include="Control\static\DataTable\DataTables-1.10.20\images\" />
+    <Folder Include="Control\static\DataTable\DataTables-1.10.20\js\" />
+    <Folder Include="Control\static\daterangepicker\" />
+    <Folder Include="Control\static\daterangepicker\example\" />
+    <Folder Include="Control\static\daterangepicker\example\amd\" />
+    <Folder Include="Control\static\daterangepicker\example\browserify\" />
+    <Folder Include="Control\static\daterangepicker\website\" />
+    <Folder Include="Control\static\img\" />
+    <Folder Include="Control\static\js\" />
+    <Folder Include="Control\templates\" />
+    <Folder Include="EntregaTecnica\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Control\static\credential\entregatecnica.json" />
+    <Content Include="Control\static\credential\__pycache__\spreads.cpython-37.pyc" />
+    <Content Include="Control\static\css\consulta.css" />
+    <Content Include="Control\static\css\login.css" />
+    <Content Include="Control\static\DataTable\DataTables-1.10.20\images\sort_asc.png" />
+    <Content Include="Control\static\DataTable\DataTables-1.10.20\images\sort_asc_disabled.png" />
+    <Content Include="Control\static\DataTable\DataTables-1.10.20\images\sort_both.png" />
+    <Content Include="Control\static\DataTable\DataTables-1.10.20\images\sort_desc.png" />
+    <Content Include="Control\static\DataTable\DataTables-1.10.20\images\sort_desc_disabled.png" />
+    <Content Include="Control\static\DataTable\DataTables-1.10.20\js\dataTables.bootstrap.js" />
+    <Content Include="Control\static\DataTable\DataTables-1.10.20\js\dataTables.bootstrap.min.js" />
+    <Content Include="Control\static\DataTable\DataTables-1.10.20\js\dataTables.bootstrap4.js" />
+    <Content Include="Control\static\DataTable\DataTables-1.10.20\js\dataTables.bootstrap4.min.js" />
+    <Content Include="Control\static\DataTable\DataTables-1.10.20\js\dataTables.foundation.js" />
+    <Content Include="Control\static\DataTable\DataTables-1.10.20\js\dataTables.foundation.min.js" />
+    <Content Include="Control\static\DataTable\DataTables-1.10.20\js\dataTables.jqueryui.js" />
+    <Content Include="Control\static\DataTable\DataTables-1.10.20\js\dataTables.jqueryui.min.js" />
+    <Content Include="Control\static\DataTable\DataTables-1.10.20\js\dataTables.semanticui.js" />
+    <Content Include="Control\static\DataTable\DataTables-1.10.20\js\dataTables.semanticui.min.js" />
+    <Content Include="Control\static\DataTable\DataTables-1.10.20\js\jquery.dataTables.js" />
+    <Content Include="Control\static\DataTable\DataTables-1.10.20\js\jquery.dataTables.min.js" />
+    <Content Include="Control\static\DataTable\datatables.js" />
+    <Content Include="Control\static\DataTable\datatables.min.css" />
+    <Content Include="Control\static\DataTable\datatables.min.js" />
+    <Content Include="Control\static\daterangepicker\.gitignore" />
+    <Content Include="Control\static\daterangepicker\bower.json" />
+    <Content Include="Control\static\daterangepicker\daterangepicker.css" />
+    <Content Include="Control\static\daterangepicker\daterangepicker.js" />
+    <Content Include="Control\static\daterangepicker\demo.html" />
+    <Content Include="Control\static\daterangepicker\drp.png" />
+    <Content Include="Control\static\daterangepicker\example\amd\index.html" />
+    <Content Include="Control\static\daterangepicker\example\amd\main.js" />
+    <Content Include="Control\static\daterangepicker\example\amd\require.js" />
+    <Content Include="Control\static\daterangepicker\example\browserify\bundle.js" />
+    <Content Include="Control\static\daterangepicker\example\browserify\index.html" />
+    <Content Include="Control\static\daterangepicker\example\browserify\main.js" />
+    <Content Include="Control\static\daterangepicker\example\browserify\README.md" />
+    <Content Include="Control\static\daterangepicker\moment.min.js" />
+    <Content Include="Control\static\daterangepicker\package.js" />
+    <Content Include="Control\static\daterangepicker\package.json" />
+    <Content Include="Control\static\daterangepicker\README.md" />
+    <Content Include="Control\static\daterangepicker\website\index.html" />
+    <Content Include="Control\static\daterangepicker\website\website.css" />
+    <Content Include="Control\static\daterangepicker\website\website.js" />
+    <Content Include="Control\static\img\LogoRM.jpg" />
+    <Content Include="Control\static\js\script.js" />
+    <Content Include="Control\templates\consulta.html" />
+    <Content Include="Control\templates\login.html" />
+    <Content Include="db.sqlite3" />
+    <Content Include="Procfile.txt" />
+    <Content Include="requirements.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Interpreter Include="env\">
+      <Id>env</Id>
+      <Version>3.7</Version>
+      <Description>env (Python 3.7 (64-bit))</Description>
+      <InterpreterPath>Scripts\python.exe</InterpreterPath>
+      <WindowsInterpreterPath>Scripts\pythonw.exe</WindowsInterpreterPath>
+      <PathEnvironmentVariable>PYTHONPATH</PathEnvironmentVariable>
+      <Architecture>X64</Architecture>
+    </Interpreter>
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.Django.targets" />
+  <!-- Specify pre- and post-build commands in the BeforeBuild and 
+       AfterBuild targets below. -->
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <AutoAssignPort>True</AutoAssignPort>
+          <UseCustomServer>True</UseCustomServer>
+          <CustomServerUrl>http://localhost</CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}" User="">
+        <WebProjectProperties>
+          <StartPageUrl>
+          </StartPageUrl>
+          <StartAction>CurrentPage</StartAction>
+          <AspNetDebugging>True</AspNetDebugging>
+          <SilverlightDebugging>False</SilverlightDebugging>
+          <NativeDebugging>False</NativeDebugging>
+          <SQLDebugging>False</SQLDebugging>
+          <ExternalProgram>
+          </ExternalProgram>
+          <StartExternalURL>
+          </StartExternalURL>
+          <StartCmdLineArguments>
+          </StartCmdLineArguments>
+          <StartWorkingDirectory>
+          </StartWorkingDirectory>
+          <EnableENC>False</EnableENC>
+          <AlwaysStartWebServerOnDebug>False</AlwaysStartWebServerOnDebug>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>
