@@ -118,6 +118,7 @@
     <Content Include="db.sqlite3" />
     <Content Include="Procfile.txt" />
     <Content Include="requirements.txt" />
+    <Content Include="runtime.txt" />
   </ItemGroup>
   <ItemGroup>
     <Interpreter Include="env\">
