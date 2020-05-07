@@ -1,1 +1,2 @@
-build: docker: entregatecnica: Dockerfile
+build: docker: 
+entregatecnica: Dockerfile
