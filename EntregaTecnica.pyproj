@@ -116,6 +116,9 @@
     <Content Include="Control\templates\consulta.html" />
     <Content Include="Control\templates\login.html" />
     <Content Include="db.sqlite3" />
+    <Content Include="heroku.yml">
+      <SubType>Code</SubType>
+    </Content>
     <Content Include="Procfile.txt" />
     <Content Include="requirements.txt" />
     <Content Include="runtime.txt" />
