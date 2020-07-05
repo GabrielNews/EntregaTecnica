@@ -36,7 +36,7 @@ def autenticar(request):
         response = urllib.request.urlopen(requisicao) # Obtém a resposta
         result = json.loads(response.read().decode()) # Decodifica a resposta
         if result['score'] == 0.0:
-            error = 'reCAPTCHA inválido'
+            error = ' Autenticação reCAPTCHA inválida'
             context = {"error": error}
             return render(request, 'login.html', context)
         # End reCAPTCHA:
