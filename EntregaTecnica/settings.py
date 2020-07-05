@@ -113,3 +113,6 @@ USE_TZ = True
 STATIC_URL = '/static/'
 # STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 STATIC_ROOT = posixpath.join(*(BASE_DIR.split(os.path.sep) + ['static']))
+
+RECAPTCHA_SITE_KEY = "6LdE360ZAAAAAMYLHV5BEZwNfrq4_KyGIL9QIb-h"
+RECAPTCHA_SECRET_KEY = "6LdE360ZAAAAABymBU_aY6GWlKiN7o3uyLqLW2Zj"

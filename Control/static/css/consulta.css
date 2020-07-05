@@ -22,7 +22,9 @@
 }
 #btnSair {
     border-color: #828b92;
-    margin-left: 40px
+    position:absolute;
+    left: 90%;
+    width: 100px;
 }
 .fundoRed {
     background-color: #8B0000;

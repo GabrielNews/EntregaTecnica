@@ -30,11 +30,6 @@ function initTable() {
 // Processa o Date Range Picker:
 function initDateRangePicker() {
     $('input[name="daterange"]').daterangepicker();
-    var date_range = $('#selector').val();
-    var dates = date_range.split(" - ");
-    var start = dates[0];
-    var end = dates[1];
-    filter(start, end);
     $('#selector').on('apply.daterangepicker', function (ev, picker) {
         var date_range = $('#selector').val();
         var dates = date_range.split(" - ");

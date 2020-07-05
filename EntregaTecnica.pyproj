@@ -112,7 +112,8 @@
     <Content Include="Control\static\daterangepicker\website\website.css" />
     <Content Include="Control\static\daterangepicker\website\website.js" />
     <Content Include="Control\static\img\LogoRM.jpg" />
-    <Content Include="Control\static\js\script.js" />
+    <Content Include="Control\static\js\consulta.js" />
+    <Content Include="Control\static\js\login.js" />
     <Content Include="Control\templates\consulta.html" />
     <Content Include="Control\templates\login.html" />
     <Content Include="db.sqlite3" />

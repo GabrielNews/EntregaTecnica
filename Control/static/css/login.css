@@ -50,3 +50,8 @@
 .img img{
     max-width: 100%;
 }
+.buttonArea {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
