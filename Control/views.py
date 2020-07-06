@@ -5,10 +5,9 @@ from django.contrib.auth.decorators import login_required
 from django.views.decorators.csrf import csrf_protect
 from django.contrib import messages
 from Control.static.credential import spreads
-from google.oauth2 import id_token
 from google.auth.transport import requests
-import urllib, json
 from django.conf import settings
+import urllib, json
 
 def logar(request):
     return render(request, 'login.html', {'site_key': settings.RECAPTCHA_SITE_KEY})
