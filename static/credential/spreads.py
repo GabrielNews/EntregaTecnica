@@ -12,10 +12,3 @@ worksheet = wks.get_worksheet(0)
 def Todos():
     list_of_lists = worksheet.get_all_values()
     return list_of_lists
-
-def Status(status):
-    linhas = []
-    cell_list = worksheet.findall(status)
-    for cell in cell_list:
-        linhas.append(worksheet.row_values(cell.row))
-    return linhas
