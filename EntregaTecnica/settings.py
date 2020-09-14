@@ -23,7 +23,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = '06c38e01-2405-43e5-84dc-3cf06e80c357'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = ['*']
 
@@ -113,6 +113,8 @@ USE_TZ = True
 STATIC_URL = '/static/'
 # STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 STATIC_ROOT = posixpath.join(*(BASE_DIR.split(os.path.sep) + ['static']))
+
+SESSION_EXPIRE_AT_BROWSER_CLOSE = True
 
 RECAPTCHA_SITE_KEY = "6LdE360ZAAAAAMYLHV5BEZwNfrq4_KyGIL9QIb-h"
 RECAPTCHA_SECRET_KEY = "6LdE360ZAAAAABymBU_aY6GWlKiN7o3uyLqLW2Zj"
